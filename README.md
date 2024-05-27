@@ -1,43 +1,64 @@
-# Getting Started with Create React App
+# Insurance Sales Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple sales management application built with React. The application allows users to manage sales records, including adding, editing, and deleting sales entries. It also features a sales chart visualization using Recharts. The application is mobile responsive and implemented with user accessibility principles to ensure it is easily readable by assistive technology.
 
-## Available Scripts
+## Features
+
+ * Sales List: View a list of all sales records.
+ * Add Sale: Add a new sale record.
+ * Edit Sale: Edit an existing sale record.
+ * Delete Sale: Delete a sale record.
+ * Sales Chart: A PieChart that displays totaly number of sales by product/device.
+ * Mobile Responsive: Optimized for mobile devices.
+ * Accessible: Designed with accessibility principals.
+
+## How to run?
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn install`
+
+Installs the project dependencies.
+
+### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## How to test?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `yarn test`
 
-### `npm run build`
+Launches the test runner in the interactive watch mode.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How to create a production build?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `yarn run build`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Builds the app for production to the `build` folder.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Components
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### SalesForm
+The SalesForm component allows users to add and edit sales records. It includes fields for first name, last name, email, age, and product selection.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### SalesList
+The SalesList component displays a table of all sales records. Each row has options to edit or delete the corresponding sale record.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### SalesChart
+The SalesChart component uses Recharts to visualize sales data in a chart format.
+
+## Hooks
+
+### useSales
+The useSales hook manages the state for sales records and products. It includes functions to add, update, and delete sales records.
+
+
+## Mobile Responsiveness and Accessibility
+
+This application is designed to be mobile responsive, ensuring a smooth experience on both desktop and mobile devices. Additionally, it follows accessibility principles to make it easily readable by screen readers, providing a better user experience for all users, including those with disabilities.
 
 ## Learn More
 

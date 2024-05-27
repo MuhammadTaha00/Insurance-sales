@@ -1,0 +1,19 @@
+select {
+  height: 36px;
+}
+
+.form-control {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+}
